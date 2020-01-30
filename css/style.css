@@ -1,0 +1,52 @@
+.col-9 img{
+	width: 600px;
+}
+
+.datos {
+	align-content: center;
+	margin: auto;
+}
+
+#popoverData{
+	
+}
+#tibu{
+	width: 35px;
+	transition: transform .2s;
+}
+i{
+	transition: transform .2s;
+}
+
+i:hover{
+	 transform: scale(1.5);
+}
+#tibu:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#cucuta{
+	width: 35px;
+}
+
+.datos {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 209px;
+  left: 326px;
+}
+
+.image3 {
+  position: absolute;
+  top: 435px;
+  left: 400px;
+}
