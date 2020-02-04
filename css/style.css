@@ -50,3 +50,7 @@ i:hover{
   top: 435px;
   left: 400px;
 }
+
+.mostrar {
+    visibility: hidden;
+}
