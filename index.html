@@ -2,132 +2,307 @@
 <html lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Nte de Santander</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <meta name="description" content="Pagina mapa de norte de santander">
-    <meta name="keywords" content="UFPS, Ingenieria, cucuta, programacion web">
-    <script src="https://kit.fontawesome.com/dc4f193fbc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mapa Nte de Santander</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/dc4f193fbc.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.11.0/css/mdb.min.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<meta name="description" content="Pagina mapa de norte de santander">
+	<meta name="keywords" content="UFPS, Ingenieria, cucuta, programacion web">
+	<link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10">
-                    <h1>Mapa Norte de Santander</h1>
-                </div>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10">
+					<h1>Mapa Norte de Santander</h1>
+				</div>
 
-                <div class="col-lg-2">
-                    <img src="images/redes.jpg" class="rounded float-left" style="width: 100px">
-                </div>
-            </div>
-        </div>
+				<div class="col-lg-2">
+					<img src="images/redes.jpg" class="rounded float-left" style="width: 100px">
+				</div>
+			</div>
+		</div>
 
-    </header>
-
-    <div class="container">
-        <nav class="navbar sticky-top navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Inicio</a>
-            <a class="navbar-brand" href="html/pag1.html">Pagina 1</a>
-            <a class="navbar-brand" href="html/pag2.html">Pagina 2</a>
-            <a class="navbar-brand" href="html/pag3.html">Pagina 3</a>
-        </nav>
-        <div class="row">
-            <section class="datos">
-               <div class="row">
-                <div class="col-9" style="position: static">
-                    <img class="image1" src="images/mapa.png" alt="">
-                    <button data-toggle="popover" class="image2" href="tibu.html" id="popoverData" class="btn" href="#" data-content="Informacion detallada del municipio de tibu" rel="popover" data-placement="bottom" data-original-title="Tibu" data-trigger="hover" target="_blank" ><i id="tibu" class="fas fa-map-marker-alt fa-2x"></i></button>
-                    <button data-toggle="popover" class="image3" href="tibu.html" id="popoverData1" class="btn" href="#" data-content="Informacion detallada del municipio de Cucuta" rel="popover" data-placement="bottom" data-original-title="Cucuta" data-trigger="hover" target="_blank"><i id="cucuta" class="fas fa-map-marker-alt fa-2x"></i></button>
-                </div> 
-                <div class="col-3" id="mostrar">
-                <p > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, illum distinctio quasi ad cum quaerat, quam delectus, rerum eligendi magni facilis! Voluptas quam aliquid numquam unde facere repellendus blanditiis accusantium.</p>
-                </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="row">
-            <div class="card-deck">
+	</header>
 
 
-                <div class="card">
-                    <img src="images/image1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores recusandae quae, quos vel ab voluptates, minus labore quas vero ad tempora ducimus dolor nostrum alias id optio magnam harum.</p>
-                        <p class="card-text"><small class="text-muted"></small></p>
-                    </div>
-                </div>
+	<nav class="navbar sticky-top navbar-light bg-light">
+		<a class="navbar-brand" href="#">Inicio</a>
+		<a class="navbar-brand" href="#">Pagina 1</a>
+		<a class="navbar-brand" href="#">Pagina 2</a>
+		<a class="navbar-brand" href="#">Pagina 3</a>
+	</nav>
+	<div class="container">
+		<div class="row d-flex justify-content-center pb-4">
+			<div class="col-lg-6 align-self-center">
+				<img class="rounded mx-auto d-block img-fluid animated zoomIn slow" src="images/mapa.png" alt="">
+				<a data-toggle="popover" class="image2 text-center animated zoomIn delay-2s" id="popoverData" data-content="Informacion detallada del municipio de tibu" rel="popover" data-placement="bottom" data-original-title="Tibu" data-trigger="hover" target="_blank" name="pin"><i id="tibu" class="fas fa-map-marker-alt fa-2x"></i></a>
+				<a data-toggle="popover" class="image3 text-center animated zoomIn delay-2s" id="popoverData1" data-content="Informacion detallada del municipio de Cucuta" rel="popover" data-placement="bottom" data-original-title="Cucuta" data-trigger="hover" target="_blank" name="pin"><i id="cucuta" class="fas fa-map-marker-alt fa-2x"></i></a>
+			</div>
+
+			<div class="col-lg-6 align-self-center">
+
+				<!-- Card -->
+				<div class="card animated zoomIn delay-3s" id="inicio">
+
+					<!-- Card image -->
+					<!--<img class="card-img-top img-fluid" src="images/image1.jpg" alt="Card image cap">-->
+
+					<!-- Card content -->
+					<div class="card-body">
+
+						<!-- Title -->
+						<h4 class="card-title"><a>Bienvenido</a></h4>
+						<!-- Text -->
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur a natus, ex omnis voluptates iure, ea reprehenderit ratione soluta deserunt, laborum molestias id. Deserunt quod aspernatur tempora eius ea?
+							content.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aliquam omnis harum quas dicta suscipit, sequi aspernatur officia porro at fuga! Reiciendis illum nam quos qui necessitatibus aliquid incidunt excepturi.</p>
+						<!-- Button -->
+						<a href="#" class="btn btn-primary">Button</a>
+
+					</div>
+
+				</div>
+				<!-- Card -->
+				<div class="card animated fadeIn slow" style="display: none;" id="mostrar" name="mostrar">
+
+					<!-- Card image -->
+					<!--<img class="card-img-top img-fluid" src="images/image1.jpg" alt="Card image cap">-->
+
+					<!-- Card content -->
+					<div class="card-body">
+
+						<!-- Title -->
+						<h4 class="card-title"><a>Tibu</a></h4>
+						<!-- Text -->
+						<p class="card-text">Tibú es un municipio de Colombia ubicado en el departamento de Norte de Santander, en el nordeste del país, en la frontera con Venezuela y a orillas del río Tibú. Dentro de las ciudades más pobladas de Colombia es la número 160, y es la sexta ciudad del departamento después de Cúcuta, Ocaña, Villa del Rosario, Los Patios y Pamplona. Cuenta con una terminal aérea y se conecta por carretera nacional con Cúcuta, Ocaña y El Tarra.</p>
+						<!-- Button -->
+						<a href="#" class="btn btn-primary">Button</a>
+
+					</div>
+
+				</div>
+				<!-- Card -->
+				<!-- Card -->
+				<div class="card animated fadeIn slow" style="display: none;" id="mostrar" name="mostrar">
+
+					<!-- Card image -->
+					<!--<img class="card-img-top img-fluid" src="images/image1.jpg" alt="Card image cap">-->
+
+					<!-- Card content -->
+					<div class="card-body">
+
+						<!-- Title -->
+						<h4 class="card-title"><a>Cucuta</a></h4>
+						<!-- Text -->
+						<p class="card-text">Cúcuta es una ciudad colombiana en la frontera con Venezuela, conocida por su historia militar. El Monumento a la Batalla de Cúcuta marca el punto donde se cree que el líder militar Simón Bolívar reunió a sus tropas en 1813. El Malecón es un paseo costero junto al río. El edificio de la Torre del Reloj tiene exhibiciones de arte. El cerro Cristo Rey tiene una estatua de Cristo y vista a la ciudad. El museo del lugar de nacimiento del General Santander está en Villa del Rosario, al sur.</p>
+						<!-- Button -->
+						<a href="#" class="btn btn-primary">Button</a>
+
+					</div>
+
+				</div>
+				<!-- Card -->
+
+			</div>
 
 
-                <div class="card">
-                    <img src="images/image2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ipsum</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, necessitatibus, unde. Repudiandae voluptas voluptatem nemo at asperiores, totam sequi. Cupiditate corporis, recusandae unde, cum obcaecati perspiciatis! Debitis incidunt recusandae vitae!</p>
-                        <p class="card-text"><small class="text-muted"></small></p>
-                    </div>
-                </div>
+		</div>
+
+		<div class="row" id="pag1">
+			<div class="card-deck">
 
 
-                <div class="card">
-                    <img src="images/image3.jfif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nisi, id, autem dolorem necessitatibus repellendus commodi optio ex, voluptatibus nulla quae quod velit facilis quam blanditiis possimus. Doloremque, earum, veritatis.</p>
-                        <p class="card-text"><small class="text-muted"></small></p>
-                    </div>
-                </div>
+				<div class="card wow fadeInUp">
+					<img src="images/image1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Lorem</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores recusandae quae, quos vel ab voluptates, minus labore quas vero ad tempora ducimus dolor nostrum alias id optio magnam harum.</p>
+						<p class="card-text"><small class="text-muted"></small></p>
+					</div>
+				</div>
 
-            </div>
-        </div>
-        <footer style="background-color: dimgrey">
-            <p>2019 Carlos Jose Pablos Gutierrez</p>
-            <p>UFPS ingenieria de sistemas</p>
-            <p>Cucuta</p>
-        </footer>
-    </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-     $(document).ready(function(){
-  $("button").click(function(){
-    var x = document.getElementById("mostrar");
-  if (x.style.visibility === "hidden") {
-    x.style.visibility = "visible";
-  } else {
-    x.style.visibility   = "hidden";
-  }
-      
-  });
-});
-       /* function myFunction() {
-  var x = document.getElementById("mostrar");
-  if (x.style.visibility === "hidden") {
-    x.style.visibility = "visible";
-  } else {
-    x.style.visibility   = "hidden";
-  }
-}*/
 
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="popover"]').popover();
-        });
-        $('#popoverOption').popover({
-            trigger: "hover"
-        });
+				<div class="card wow fadeInUp">
+					<img src="images/image2.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Ipsum</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, necessitatibus, unde. Repudiandae voluptas voluptatem nemo at asperiores, totam sequi. Cupiditate corporis, recusandae unde, cum obcaecati perspiciatis! Debitis incidunt recusandae vitae!</p>
+						<p class="card-text"><small class="text-muted"></small></p>
+					</div>
+				</div>
 
-    </script>
+
+				<div class="card wow fadeInUp">
+					<img src="images/image3.jfif" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Lorem</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nisi, id, autem dolorem necessitatibus repellendus commodi optio ex, voluptatibus nulla quae quod velit facilis quam blanditiis possimus. Doloremque, earum, veritatis.</p>
+						<p class="card-text"><small class="text-muted"></small></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<footer class="page-footer font-small special-color-dark pt-4 wow fadeIn" data-wow-delay="1s">
+
+		<!-- Footer Links -->
+		<div class="container-fluid text-center text-md-left">
+
+			<!-- Grid row -->
+			<div class="row justify-content-md-center">
+				<!-- Content -->
+				<h5 class="text-uppercase">Cucuta, Colombia</h5>
+			</div>
+
+			<div class="row justify-content-md-center">
+				<h6 class="text-uppercase">example@example.com</h6>
+			</div>
+			<div class="row justify-content-md-center">
+				<p>Siguenos:</p>
+			</div>
+
+			<!-- Grid column -->
+			<!--<div class="row justify-content-md-center">
+				<span class="fa-stack" style="float: ">
+
+					<a href=""><i class="fab fa-instagram fa-3x"></i> </a>
+					<a href=""><i class="fab fa-facebook fa-3x"></i></a>
+					<a href=""><i class="fab fa-twitter fa-3x"></i></a>
+					<a href=""><i class="fas fa-envelope-square fa-3x"></i></a>
+				</span>
+
+
+			</div>-->
+
+			<div class="row row justify-content-center py-3">
+
+
+
+				<a href="#"><i class="fab fa-instagram fa-3x px-3"></i> </a>
+				<a href="#"><i class="fab fa-facebook fa-3x px-3"></i></a>
+				<a href="#"><i class="fab fa-twitter fa-3x px-3"></i></a>
+				<a href="#"><i class="fas fa-envelope-square fa-3x px-3"></i></a>
+
+
+
+			</div>
+
+
+
+
+
+			<!-- Grid row -->
+
+		</div>
+		<!-- Footer Links -->
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2020 Copyright Diseñado por Carlos Pablos y Brayan Palomino
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.11.0/js/mdb.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('[name="pin"]').click(function() {
+				var x = document.getElementsByName("mostrar");
+				var y = document.getElementById("inicio");
+				var index = $(this).index();
+				console.log(i);
+				if (x[index - 1].style.display === "none") {
+					y.style.display = "none";
+					x[index - 1].style.display = "block";
+
+					for (var i = 0; i < 2; i++) {
+						if (i !== index - 1) {
+							x[i].style.display = "none";
+						}
+					}
+
+
+				}
+
+			});
+
+
+		});
+
+	</script>
+
+	<!--<script>
+		$(document).ready(function() {
+			var elems = document.getElementsByName("pin");
+			var x = document.getElementsByName("mostrar");
+			var y = document.getElementById("inicio");
+			for (var i = 0; i < elems.length; i++) {
+				if (elems[i].style.display === "none") {
+					elems[i].style.display = "block";
+				} else {
+					elems[i].style.visibility = "block";
+				}
+			}
+
+
+			$(document.getElementsByName("pin")).click(function() {
+					var index= 
+				if (x.style.display === "none") {
+
+					x.style.display = "block";
+					y.style.display = "none";
+
+				} else {
+					x.style.display = "block";
+				}
+			});
+		});
+
+	</script>-->
+	<script>
+		$(document).ready(function() {
+			$('[data-toggle="popover"]').popover();
+		});
+		$('#popoverOption').popover({
+			trigger: "hover"
+		});
+
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			new WOW().init();
+		});
+
+	</script>
 </body>
 
 </html>

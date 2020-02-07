@@ -1,4 +1,4 @@
-.col-9 img{
+.prueba img{
 	width: 600px;
 }
 
@@ -41,16 +41,12 @@ i:hover{
 }
 .image2 {
   position: absolute;
-  top: 209px;
-  left: 326px;
+  top: 25%;
+  left: 53%;
 }
 
 .image3 {
   position: absolute;
-  top: 435px;
-  left: 400px;
-}
-
-.mostrar {
-    visibility: hidden;
+  top: 53%;
+  left: 64%;
 }
