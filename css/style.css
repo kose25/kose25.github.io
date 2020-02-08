@@ -1,4 +1,4 @@
-.prueba img{
+.prueba img {
 	width: 600px;
 }
 
@@ -7,46 +7,56 @@
 	margin: auto;
 }
 
-#popoverData{
-	
-}
-#tibu{
-	width: 35px;
+#popoverData {}
+
+/*#tibu{
+	width: 0.06%;
 	transition: transform .2s;
+}*/
+.test {
+	width: 6.1%;
+	height: 4.7%;
 }
-i{
+
+i {
 	transition: transform .2s;
 }
 
-i:hover{
-	 transform: scale(1.5);
-}
-#tibu:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+i:hover {
+	transform: scale(1.5);
 }
 
-#cucuta{
-	width: 35px;
+.efecto:hover {
+	transform: scale(1.5);
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	transition: transform .2s;
+}
+
+#cucuta:hover {
+	transform: scale(1.5);
+	transition: transform .2s;
 }
 
 .datos {
-  position: relative;
-  top: 0;
-  left: 0;
+	position: relative;
+	top: 0;
+	left: 0;
 }
+
 .image1 {
-  position: relative;
-  top: 0;
-  left: 0;
+	position: relative;
+	top: 0;
+	left: 0;
 }
+
 .image2 {
-  position: absolute;
-  top: 25%;
-  left: 53%;
+	position: absolute;
+	top: 25%;
+	left: 53%;
 }
 
 .image3 {
-  position: absolute;
-  top: 53%;
-  left: 64%;
+	position: absolute;
+	top: 53%;
+	left: 64%;
 }
