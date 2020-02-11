@@ -27,9 +27,11 @@ i:hover {
 }
 
 .efecto:hover {
-	transform: scale(1.5);
+/*	transform: scale(1.5);*/
 	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-	transition: transform .2s;
+/*	transition: transform .2s;*/
+	animation: pines .6s infinite alternate;
+	transform-origin: bottom;
 }
 
 #cucuta:hover {
@@ -59,4 +61,8 @@ i:hover {
 	position: absolute;
 	top: 53%;
 	left: 64%;
+}
+
+@keyframes pines{
+	to { transform: scale(1.5); }
 }
