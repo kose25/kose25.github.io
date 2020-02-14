@@ -48,11 +48,11 @@
 		<div class="row d-flex justify-content-center pb-4">
 			<div class="col-lg-6 align-self-center">
 				<img class="rounded mx-auto d-block img-fluid animated zoomIn slow" src="images/mapa.png" alt="">
-				<a data-toggle="popover" class="image2 text-center animated zoomIn delay-2s" id="popoverData" data-content="Informacion detallada del municipio de tibu" rel="popover" data-placement="bottom" data-original-title="Tibu" data-trigger="hover" target="_blank" name="pin" style="width: 6.141%; height: 4.877%;">
-					<img src="images/location-pin.png" alt="tibu" class="img-fluid efecto">
+				<a href="#info" data-toggle="popover" class="image2 text-center animated zoomIn delay-2s efecto" rel="popover" data-placement="right" data-container="body" data-content="Tibu" data-trigger="hover" name="pin" style="width: 6.141%; height: 4.877%;">
+					<img src="images/Recurso%204.svg" alt="tibu" class="img-fluid">
 				</a>
-				<a data-toggle="popover" class="image3 text-center animated zoomIn delay-2s" id="popoverData1" data-content="Informacion detallada del municipio de Cucuta" rel="popover" data-placement="bottom" data-original-title="Cucuta" data-trigger="hover" target="_blank" name="pin" style="width: 6.141%; height: 4.877%;">
-				<img src="images/location-pin.png" alt="Cucuta" class="img-fluid efecto">
+				<a href="#info" data-toggle="popover" class="image3 text-center animated zoomIn delay-2s efecto" rel="popover" data-placement="right" data-container="body" data-content="Cucuta" data-trigger="hover" name="pin" style="width: 6.141%; height: 4.877%;">
+					<img src="images/Recurso%204.svg" alt="Cucuta" class="img-fluid">
 				</a>
 			</div>
 
@@ -242,7 +242,7 @@
 				var x = document.getElementsByName("mostrar");
 				var y = document.getElementById("inicio");
 				var index = $(this).index();
-				console.log(i);
+				//console.log(i);
 				if (x[index - 1].style.display === "none") {
 					y.style.display = "none";
 					x[index - 1].style.display = "block";
