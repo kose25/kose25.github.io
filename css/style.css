@@ -39,10 +39,12 @@ i:hover {
 	transform-origin: bottom;
 }
 
+/*
 #cucuta:hover {
 	transform: scale(1.5);
 	transition: transform .2s;
 }
+*/
 
 .datos {
 	position: relative;
