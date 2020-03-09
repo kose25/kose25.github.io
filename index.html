@@ -45,7 +45,7 @@
 		<a class="navbar-brand mb-0 h1 ml-lg-5 d-none d-xs-none d-sm-none d-md-none d-lg-block" href="index.html">
 			Inicio</a>
 		<a class="navbar-brand mb-0 h1 ml-lg-5 d-block d-xs-none d-sm-block d-md-block d-lg-none" href="#">
-			<img src="https://ww2.ufps.edu.co/public/imagenes/noticia/Comunicado_073_grand.png" width="50" class="d-inline-block align-top" alt="">Oferta Exportablebr<br>N. Santander</a>
+			<img src="https://ww2.ufps.edu.co/public/imagenes/noticia/Comunicado_073_grand.png" width="50" class="d-inline-block align-top" alt="">Oferta Exportable<br>N. Santander</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -60,12 +60,12 @@
 	<div class="container">
 		<div class="row d-flex justify-content-center pb-4">
 			<div class="col-lg-6 align-self-center">
-				<img class="rounded mx-auto d-block img-fluid animated zoomIn slow" src="images/mapa.png" alt="">
+				<img class="rounded mx-auto d-block img-fluid animated zoomIn slow" src="images/mapa%20rojo.png" alt="">
 				<a href="#info" data-toggle="popover" class="image2 text-center animated zoomIn delay-2s efecto" rel="popover" data-placement="right" data-container="body" data-content="Tibu" data-trigger="hover" name="pin" style="width: 6.141%; height: 4.877%;" id="tibu">
-					<img src="images/Recurso%204.svg" alt="tibu" class="img-fluid">
+					<img src="images/tibu.svg" alt="tibu" class="img-fluid">
 				</a>
 				<a href="#info" id="cucuta" data-toggle="popover" class="image3 text-center animated zoomIn delay-2s efecto" rel="popover" data-placement="right" data-container="body" data-content="Cucuta" data-trigger="hover" name="pin" style="width: 6.141%; height: 4.877%;">
-					<img src="images/Recurso%204.svg" alt="Cucuta" class="img-fluid">
+					<img src="images/cucuta.svg" alt="Cucuta" class="img-fluid">
 				</a>
 			</div>
 
@@ -86,6 +86,8 @@
 							Las principales actividades económicas del departamento, de acuerdo a su participación en el PIB son los servicios sociales comunales y personas (25.1%), establecimientos financieros, seguros e inmobiliarios (15.1%), restaurantes, comercio y hoteles (12.3%) y agricultura, ganadería, silvicultura y la pesca (10.3%). Estos 4 sectores representan el 62.8% de la economía departamental. <br>
 							Fuente: Plan Departamental de desarrollo.
 						</p>
+
+<!--						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Button</a>-->
 					</div>
 				</div>
 			</div>
@@ -126,6 +128,9 @@
 			</div>
 		</div>
 
+	</div>
+	<div id="modal">
+		
 	</div>
 
 	<footer class="page-footer font-small special-color-dark pt-4 wow fadeIn">
@@ -180,9 +185,9 @@
 
 
 
-				<a href="#"><i class="fab fa-instagram fa-3x px-3"></i> </a>
-				<a href="#"><i class="fab fa-facebook fa-3x px-3"></i></a>
-				<a href="#"><i class="fab fa-twitter fa-3x px-3"></i></a>
+				<!--				<a href="#"><i class="fab fa-instagram fa-3x px-3"></i> </a>-->
+				<a href="https://www.facebook.com/Comercio-Internacional-UFPS-469734916868738/"><i class="fab fa-facebook fa-3x px-3"></i></a>
+				<!--				<a href="#"><i class="fab fa-twitter fa-3x px-3"></i></a>-->
 				<a href="mailto:comerciointernacional@ufps.edu.co"><i class="fas fa-envelope-square fa-3x px-3"></i></a>
 
 
@@ -251,14 +256,15 @@
 		});
 
 	</script>
-	
+
 	<script type="text/javascript">
-			$('[name="pin"]').click(function(event) {
-				var id = $(this).attr('id');
-				//id+=".html"
-				$("#pag1").load(id + ".html");
-				$("#mapside").load(id + "card.html");
-			});
+		$('[name="pin"]').click(function(event) {
+			var id = $(this).attr('id');
+			//id+=".html"
+			$("#pag1").load(id + ".html");
+			$("#mapside").load(id + "card.html");			
+			$("#modal").load(id + "modal.html");
+		});
 
 	</script>
 
@@ -300,7 +306,7 @@
 
 	</script>
 
-	
+
 	<!--<script>
 		/* codigo pa tener la misma altura que el ancho */
 		var cw = $('.child').width();
