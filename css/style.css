@@ -70,6 +70,12 @@ i:hover {
 	left: 64%;
 }
 
+.image4 {
+	position: absolute;
+	top: 32%;
+	left: 26%;
+}
+
 @keyframes pines{
 	to { transform: scale(1.5); }
 }
