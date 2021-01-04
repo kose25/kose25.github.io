@@ -1,10 +1,10 @@
 .prueba img {
-	width: 600px;
+    width: 600px;
 }
 
 .datos {
-	align-content: center;
-	margin: auto;
+    align-content: center;
+    margin: auto;
 }
 
 
@@ -12,32 +12,33 @@
 	width: 0.06%;
 	transition: transform .2s;
 }*/
+
 .test {
-	width: 6.1%;
-	height: 4.7%;
+    width: 6.1%;
+    height: 4.7%;
 }
 
 i {
-	transition: transform .2s;
+    transition: transform .2s;
 }
 
 i:hover {
-	transform: scale(1.5);
+    transform: scale(1.5);
 }
 
-.efecto:hover img{
-/*	transform: scale(1.5);*/
-	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-/*	transition: transform .2s;*/
-	animation: pines .6s infinite alternate;
-	transform-origin: bottom;
+.efecto:hover img {
+    /*	transform: scale(1.5);*/
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /*	transition: transform .2s;*/
+    animation: pines .6s infinite alternate;
+    transform-origin: bottom;
 }
 
-.efecto:focus img{
-
-	animation: pines .6s infinite alternate;
-	transform-origin: bottom;
+.efecto:focus img {
+    animation: pines .6s infinite alternate;
+    transform-origin: bottom;
 }
+
 
 /*
 #cucuta:hover {
@@ -47,41 +48,49 @@ i:hover {
 */
 
 .datos {
-	position: relative;
-	top: 0;
-	left: 0;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .image1 {
-	position: relative;
-	top: 0;
-	left: 0;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .image2 {
-	position: absolute;
-	top: 25%;
-	left: 53%;
+    position: absolute;
+    top: 25%;
+    left: 53%;
 }
 
 .image3 {
-	position: absolute;
-	top: 53%;
-	left: 64%;
+    position: absolute;
+    top: 53%;
+    left: 64%;
 }
 
 .image4 {
-	position: absolute;
-	top: 32%;
-	left: 26%;
+    position: absolute;
+    top: 32%;
+    left: 26%;
 }
 
 .image5 {
-	position: absolute;
-	top: 27%;
-	left: 36%;
+    position: absolute;
+    top: 27%;
+    left: 36%;
 }
 
-@keyframes pines{
-	to { transform: scale(1.5); }
+.image6 {
+    position: absolute;
+    top: 32%;
+    left: 30%;
+}
+
+@keyframes pines {
+    to {
+        transform: scale(1.5);
+    }
 }
