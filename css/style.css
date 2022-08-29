@@ -107,6 +107,12 @@ i:hover {
     left: 18%;
 }
 
+.image10 {
+    position: absolute;
+    top: 40%;
+    left: 29%;
+}
+
 @keyframes pines {
     to {
         transform: scale(1.5);
